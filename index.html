@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--
+
+         /#######                      /##
+        | ##__  ##                    |__/
+        | ##  \ ##  /######   /####### /##  /######  /#######   /######   /######
+        | ##  | ## /##__  ## /##_____/| ## /##__  ##| ##__  ## /##__  ## /##__  ##
+        | ##  | ##| ########|  ###### | ##| ##  \ ##| ##  \ ##| ########| ##  \__/
+        | ##  | ##| ##_____/ \____  ##| ##| ##  | ##| ##  | ##| ##_____/| ##
+        | #######/|  ####### /#######/| ##|  #######| ##  | ##|  #######| ##
+        |_______/  \_______/|_______/ |__/ \____  ##|__/  |__/ \_______/|__/
+                                           /##  \ ##
+                                          |  ######/
+                                           \______/
+         /#######                                      /##
+        | ##__  ##                                    | ##
+        | ##  \ ##  /######   /######   /######   /#######
+        | #######  /##__  ## |____  ## /##__  ## /##__  ##
+        | ##__  ##| ##  \ ##  /#######| ##  \__/| ##  | ##
+        | ##  \ ##| ##  | ## /##__  ##| ##      | ##  | ##
+        | #######/|  ######/|  #######| ##      |  #######
+        |_______/  \______/  \_______/|__/       \_______/
+
+        by Fernando Tapia Rico - fertapric@gmail.com
+    -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <title>Designerboard - A more convinient way of browsing your favorite design websites (Behance, Dribbble & DesignerNews)</title>
+    <meta name="description" content="Designerboard is a web-app based on dribbble.com, behance.net & news.layervault.com websites which is created to improve and simplify your inspiring by the best designers of the world." />
+
+    <meta name="viewport" content="width=device-width">
+
+    <!-- JAVASCRIPT (CDN WITH FALLBACK) -->
+
+    <!-- jQuery 1.9.1 -->
+    <script src="javascripts/vendor/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Underscore 1.4.4 -->
+    <script src="javascripts/vendor/underscore.js/1.4.4/underscore-min.js"></script>
+
+    <!-- Backbone.js 1.0.0 -->
+    <script src="javascripts/vendor/backbone.js/1.0.0/backbone-min.js"></script>
+
+    <!-- Modernizr 2.6.2 -->
+    <script src="javascripts/vendor/modernizr/2.6.2/modernizr.min.js"></script>
+
+    <!-- Backbone-relational 0.8.0 -->
+    <script src="javascripts/vendor/backbone-relational/0.8.6/backbone-relational.min.js"></script>
+
+    <!-- Mustache 0.7.2 -->
+    <script src="javascripts/vendor/mustache.js/0.7.2/mustache.min.js"></script>
+
+    <!-- Mouse Trap 1.2.2 -->
+    <script src="javascripts/vendor/mousetrap/1.2.2/mousetrap.min.js"></script>
+
+    <!-- Moment.js 2.0.0 -->
+    <script src="javascripts/vendor/moment.js/2.0.0/moment.min.js"></script>
+
+
+    <!-- STYLE -->
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+  </head>
+  <body>
+
+    <header class="fx-from-left">
+        <nav class="left-nav" role="navigation">
+          <a data-action="show_popular" data-section="popular"><i class="icon-star"></i></a>
+          <a data-action="show_recent" data-section="recent"><i class="icon-time"></i></a>
+          <a data-action="show_news" data-section="news"><i class="icon-list-alt"></i></a>
+          <a data-action="show_jobs" data-section="jobs"><i class="icon-suitcase"></i></a>
+        </nav>
+
+        <nav class="right-nav" role="navigation">
+            <a class="facebook" data-action="share_facebook"><i class="icon-facebook"></i></a>
+            <a class="twitter" data-action="share_twitter"><i class="icon-twitter"></i></a>
+            <a class="active" data-action="toggle_size"><i class="icon-th"></i></a>
+        </nav>
+    </header>
+
+    <div id="content">
+    </div>
+
+    <div id="loading">
+        <div class="loader">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </div>
+
+    <footer class="hide">
+        <span class="info">designerboard</span>
+        <span class="credits">by <a href="fernandotapiarico.com">Fernando Tapia Rico</a></span>
+    </footer>
+
+    <script data-main="/javascripts/main.js" src="javascripts/vendor/require.js/2.1.4/require.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-11499298-4', 'designerboard.co');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
