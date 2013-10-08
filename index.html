@@ -32,12 +32,12 @@
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <title>Designerboard - A more convinient way of browsing your favorite design websites (Behance, Dribbble & DesignerNews)</title>
+    <title>Designerboard - Behance, Dribbble & DesignerNews all in one</title>
     <meta name="description" content="Designerboard is a web-app based on dribbble.com, behance.net & news.layervault.com websites which is created to improve and simplify your inspiring by the best designers of the world." />
 
     <meta name="viewport" content="width=device-width">
 
-    <!-- JAVASCRIPT (CDN WITH FALLBACK) -->
+    <!-- JAVASCRIPTS -->
 
     <!-- jQuery 1.9.1 -->
     <script src="javascripts/vendor/jquery/1.9.1/jquery.min.js"></script>
@@ -66,17 +66,41 @@
 
     <!-- STYLE -->
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style-c43dbe458c8dcaedfc1e7402a85e94f57681bde7.css">
 
   </head>
   <body>
 
     <header class="fx-from-left">
         <nav class="left-nav" role="navigation">
-          <a data-action="show_popular" data-section="popular"><i class="icon-star"></i></a>
-          <a data-action="show_recent" data-section="recent"><i class="icon-time"></i></a>
-          <a data-action="show_news" data-section="news"><i class="icon-list-alt"></i></a>
-          <a data-action="show_jobs" data-section="jobs"><i class="icon-suitcase"></i></a>
+            <a class="tooltip-container" data-action="show_popular" data-section="popular">
+                <i class="icon-star"></i>
+                <span class="tooltip right">
+                    <span class="tooltip-arrow"></span>
+                    <span class="tooltip-inner">Popular shots</span>
+                </span>
+            </a>
+            <a class="tooltip-container" data-action="show_recent" data-section="recent">
+                <i class="icon-time"></i>
+                <span class="tooltip right">
+                    <span class="tooltip-arrow"></span>
+                    <span class="tooltip-inner">Recent shots</span>
+                </span>
+            </a>
+            <a class="tooltip-container" data-action="show_news" data-section="news">
+                <i class="icon-list-alt"></i>
+                <span class="tooltip right">
+                    <span class="tooltip-arrow"></span>
+                    <span class="tooltip-inner">News</span>
+                </span>
+            </a>
+            <a class="tooltip-container" data-action="show_jobs" data-section="jobs">
+                <i class="icon-suitcase"></i>
+                <span class="tooltip right">
+                    <span class="tooltip-arrow"></span>
+                    <span class="tooltip-inner">Jobs</span>
+                </span>
+            </a>
         </nav>
 
         <nav class="right-nav" role="navigation">
@@ -102,7 +126,7 @@
         <span class="credits">by <a href="fernandotapiarico.com">Fernando Tapia Rico</a></span>
     </footer>
 
-    <script data-main="/javascripts/main.js" src="javascripts/vendor/require.js/2.1.4/require.min.js"></script>
+    <script data-main="/javascripts/application-c43dbe458c8dcaedfc1e7402a85e94f57681bde7.js" src="javascripts/vendor/require.js/2.1.4/require.min.js"></script>
 
     <!-- Google Analytics -->
     <script>
